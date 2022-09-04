@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1AFAA"
+    android:orientation="vertical"
+    tools:context=".PostFragment">
+
+    <TextView
+        android:id="@+id/o_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please fill the following fields for posting" />
+
+    <EditText
+        android:id="@+id/Pcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/postal_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="postal address"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Psurf_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="surface area"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/construct_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="construction year"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Pnum_bedroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="number of bedrooms"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Prental_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="rental price"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/statusSpinerPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/availabil_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="available date"
+        android:inputType="date|textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/isGarednPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Balcony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="with balcony" />
+
+        <RadioButton
+            android:id="@+id/noBalcony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="no balcony" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/isbalconyPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Garden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="with garden" />
+
+        <RadioButton
+            android:id="@+id/noGarden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="no garden" />
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="short description"
+            android:inputType="textPersonName" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></ImageView>
+
+    <Button
+        android:id="@+id/loadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Image"
+        android:textColor="#EA4F1E" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:textColor="#0B6301" />
+</LinearLayout>

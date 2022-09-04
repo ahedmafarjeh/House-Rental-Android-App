@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Search">
+    <Button
+        android:id="@+id/backtoSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to search"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please fill the follwoing fields for searching" />
+
+
+        <EditText
+            android:id="@+id/Scity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="City"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Smin_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="minimum surface area"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Smax_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="maximum surface area"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Smin_bedrrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="minimum  number of bedrooms"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Smax_bedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="maximum number of bedrooms"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Srental_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="minimum number of rental price"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusSpinner">
+
+        </Spinner>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/gardenGroup">
+
+            <RadioButton
+                android:id="@+id/with_garden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="with garden" />
+
+            <RadioButton
+                android:id="@+id/no_garden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="no garden"
+                android:textColor="#D63434" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/balconyGroup"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/with_balcony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="with balcony" />
+
+            <RadioButton
+                android:id="@+id/no_balcony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="no balcony"
+                android:textColor="#D63434" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/searchBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchResult"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/listVeiw"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/root4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

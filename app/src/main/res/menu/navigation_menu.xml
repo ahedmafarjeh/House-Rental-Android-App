@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:title="Search Properity" />
+
+    <item
+        android:id="@+id/nav_post"
+        android:title="Post Properity" />
+    <item
+        android:id="@+id/nav_edit_list"
+        android:title="Edit the list of properties"/>
+    <item
+        android:id="@+id/nav_rentalTenant_history"
+        android:title="Rental Tenant History"/>
+
+    <item
+        android:id="@+id/nav_rental_history"
+        android:title="Rental Agency History"/>
+    <item
+        android:id="@+id/nav_request"
+        android:title="Request"/>
+    <item
+        android:id="@+id/nav_approveRequest"
+        android:title="Approve Request"/>
+
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="profile"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="LogOut"/>
+
+
+</menu>
